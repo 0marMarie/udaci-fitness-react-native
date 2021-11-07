@@ -5,7 +5,7 @@ import { getMetricMetaInfo } from "./utils/helpers"
 
 export default class App extends Component {
   componentDidMount() {
-    console.log('f u')
+    console.log('Started Successfully! OMAR~MARIE')
   }
   render(){
     return (
