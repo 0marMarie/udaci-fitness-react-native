@@ -1,25 +1,15 @@
-import React, { Component } from "react";
-import {
-  View,
-  TouchableOpacity,
-  Text,
-  StyleSheet,
-  Platform
-} from "react-native";
-import {
-  getMetricMetaInfo,
-  timeToString,
-  getDailyReminderValue
-} from "../utils/helpers";
-import UdaciSlider from "./UdaciSlider";
-import UdaciSteppers from "./UdaciSteppers";
-import DateHeader from "./DateHeader";
-import { Ionicons } from "@expo/vector-icons";
-import TextButton from "./TextButton";
-import { submitEntry, removeEntry } from "../utils/api";
-import { connect } from "react-redux";
-import { addEntry } from "../actions";
-import { purple, white } from "../utils/colors";
+import React, { Component } from "react"
+import { View, TouchableOpacity, Text, StyleSheet, Platform } from "react-native"
+import { getMetricMetaInfo, timeToString, getDailyReminderValue } from "../utils/helpers"
+import UdaciSlider from "./UdaciSlider"
+import UdaciSteppers from "./UdaciSteppers"
+import DateHeader from "./DateHeader"
+import { Ionicons } from "@expo/vector-icons"
+import TextButton from "./TextButton"
+import { submitEntry, removeEntry } from "../utils/api"
+import { connect } from "react-redux"
+import { addEntry } from "../actions"
+import { purple, white } from "../utils/colors"
 
 function SubmitBtn({ onPress }) {
   return (
